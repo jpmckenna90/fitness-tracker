@@ -1,6 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const seed = require("./Develop/seeders/seed.js")
 // Require model! 
+
 
 const PORT = process.env.PORT || 8080;
 
