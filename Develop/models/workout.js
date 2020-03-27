@@ -18,10 +18,3 @@ const workoutSchema = new Schema({
 const Workout = mongoose.model("Workout", workoutSchema);
 
 module.exports = Workout;
-
-// type: "resistance",
-// name: "Push Press",
-// duration: 25,
-// weight: 185,
-// reps: 8,
-// sets: 4
