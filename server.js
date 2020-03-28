@@ -13,10 +13,8 @@ app.use(express.json());
 app.use(express.static("./Develop/public"));
 
 // mongo connection
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
+mongoose.connect(MONGODB_URI);
 
 // Use api routes
 app.use(require("./Develop/Routes/api-routes.js"))
