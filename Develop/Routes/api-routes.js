@@ -19,6 +19,17 @@ router.put("/api/workouts/:id", (req, res) => {
       res.send(err);
     });
 });
+
+// todo Create new workout
+router.post("/api/workouts/:id", (req, res) => {
+  console.log(req.body);
+  db.Workout.create(req.body)
+    .then(data => res.json(data))
+    .catch(err => {
+      res.send(err);
+    });
+});
+
 // module.exports = app => {
 //   app.get("/api/workouts", (req, res) => {
 //     db.Workout.find({}).then(data => res.json(data))
