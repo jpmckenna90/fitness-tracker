@@ -1,2 +1,5 @@
 # fitness-tracker
-Fitness Tracker using MongoDB
+This application is a fitness tracker that will allow a user to input data about their workout and various exercises, store it, and then present them with graphs depicting trends in the data. 
+
+## Technologies Used
+HTML, CSS, Javascript, Node.js, Express, MongoDB, Heroku
