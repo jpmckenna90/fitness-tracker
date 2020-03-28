@@ -18,7 +18,7 @@ mongoose.connect(
   process.env.MONGODB_URI ||
     "mongodb://user1:password1@ds031952.mlab.com:31952/heroku_bn4kfb36",
   {
-    useMongoClient: true
+    useNewUrlParser: true
   }
 );
 
